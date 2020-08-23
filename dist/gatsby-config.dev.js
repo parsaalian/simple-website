@@ -1,4 +1,6 @@
-const path = require("path")
+"use strict";
+
+var path = require("path");
 
 module.exports = {
   siteMetadata: {
@@ -9,19 +11,17 @@ module.exports = {
     social: {
       twitter: "@parsaalian",
       linkedin: "parsa-alian-394431147",
-      github: "parsaalian",
-    },
+      github: "parsaalian"
+    }
   },
+
   /* Your site config here */
-  plugins: [
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: {
-          default: path.resolve("./src/components/MDXLayout.jsx"),
-        },
-      },
-    },
-    "gatsby-plugin-react-helmet",
-  ],
-}
+  plugins: [{
+    resolve: "gatsby-plugin-mdx",
+    options: {
+      defaultLayouts: {
+        "default": path.resolve("./src/components/MDXLayout.jsx")
+      }
+    }
+  }, "gatsby-plugin-react-helmet"]
+};
