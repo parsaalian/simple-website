@@ -4,8 +4,9 @@ import { MDXProvider } from '@mdx-js/react'
 import { Global } from '@emotion/core'
 import { ThemeProvider, Styled } from 'theme-ui'
 import { Box } from 'rebass'
-import SEO from './SEO'
 import { theme, components as MDXComponents } from '../theme'
+import SEO from './SEO'
+import Navbar from './Navbar.jsx'
 
 function MDXLayout({ children }) {
     return (
@@ -24,6 +25,7 @@ function MDXLayout({ children }) {
                         },
                     })}
                 />
+                <Navbar />
                 <Styled.root>
                     <Box width={[1, 1, 2 / 3, 1 / 2]} mx="auto">
                         <MDXProvider components={MDXComponents}>
