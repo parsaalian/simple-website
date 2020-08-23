@@ -14,6 +14,9 @@ module.exports = {
     },
     /* Your site config here */
     plugins: [
+        'gatsby-plugin-react-helmet',
+        'gatsby-plugin-theme-ui',
+        'gatsby-plugin-emotion',
         {
             resolve: `gatsby-plugin-mdx`,
             options: {
@@ -22,6 +25,5 @@ module.exports = {
                 },
             },
         },
-        'gatsby-plugin-react-helmet',
     ],
 }
