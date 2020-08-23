@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+    assetPrefix: '/~alian',
     siteMetadata: {
         title: 'Parsa Alian',
         author: 'Parsa Alian',
